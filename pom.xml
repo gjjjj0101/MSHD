@@ -25,6 +25,7 @@
         <spring-boot.mybatis>2.2.2</spring-boot.mybatis>
         <fastjson.version>1.2.80</fastjson.version>
         <jjwt.version>0.9.1</jjwt.version>
+        <mysql-connect.version>8.0.26</mysql-connect.version>
     </properties>
 
     <!-- 依赖声明 -->
@@ -98,6 +99,32 @@
                 <groupId>com.mshd</groupId>
                 <artifactId>mshd-common</artifactId>
                 <version>${mshd.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <scope>runtime</scope>
+                <version>${mysql-connect.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+            </dependency>
+
+
+<!--            <dependency>-->
+<!--                <groupId>org.hibernate.validator</groupId>-->
+<!--                <artifactId>hibernate-validator</artifactId>-->
+<!--                <version>6.0.17.Final</version>-->
+<!--                <scope>compile</scope>-->
+<!--            </dependency>-->
+
+            <dependency>
+                <groupId>org.modelmapper</groupId>
+                <artifactId>modelmapper</artifactId>
+                <version>2.3.2</version>
             </dependency>
 
         </dependencies>
